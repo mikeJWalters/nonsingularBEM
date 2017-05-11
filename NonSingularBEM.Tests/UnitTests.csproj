@@ -86,6 +86,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="NonSingularBEM\Controllers\HomeControllerTest.cs" />
     <Compile Include="Services\Arclength\ArclengthCalculatorTests.cs" />
+    <Compile Include="Services\Arclength\SegmentIntegralServiceTests.cs" />
     <Compile Include="Services\Matrices\FullMatrixSolverTests.cs" />
     <Compile Include="Services\Matrices\MatrixOperatorTests.cs" />
     <Compile Include="Services\Splines\QuinticNaturalCoefficientCalculatorTests.cs" />

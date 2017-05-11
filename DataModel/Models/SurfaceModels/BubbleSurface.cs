@@ -13,6 +13,7 @@ namespace DataModel.Models.SurfaceModels
         public SurfaceVariable VerticalNodePositions { get; set; }
         public SurfaceVariable Arclength { get; set; }
         public SurfaceVariable Potential { get; set; }
+        public SurfaceVariable ExtraStress { get; set; }
         public SplineValues RadialSplines { get; set; }
         public SplineValues VerticalSplines { get; set; }
         

@@ -129,6 +129,11 @@
     <Compile Include="Matrices\SolverSetup.cs" />
     <Compile Include="Matrices\MatrixOperator.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Smoothing\EvenVariableSmoother.cs" />
+    <Compile Include="Smoothing\IVariableSmoother.cs" />
+    <Compile Include="Smoothing\ISurfaceSmoother.cs" />
+    <Compile Include="Smoothing\OddVariableSmoother.cs" />
+    <Compile Include="Smoothing\SurfaceSmoother.cs" />
     <Compile Include="Splines\Clamped\QuinticClampedArclengthCalculator.cs" />
     <Compile Include="Splines\Clamped\QuinticClampedCalculator.cs" />
     <Compile Include="Splines\ISplineCalculator.cs" />

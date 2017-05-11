@@ -115,6 +115,7 @@
     <Compile Include="Models\InitialConditions\InitialConditions.cs" />
     <Compile Include="Models\InitialConditions\NumericalModellingConditions.cs" />
     <Compile Include="Models\Splines\SplineValues.cs" />
+    <Compile Include="Models\SurfaceModels\SurfaceArclength.cs" />
     <Compile Include="Models\SurfaceModels\SurfaceVariable.cs" />
     <Compile Include="Models\SurfaceModels\BubbleSurface.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
