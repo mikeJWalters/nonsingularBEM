@@ -1,8 +1,4 @@
 ﻿using DataModel.Models.Splines;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
 
 namespace DataModel.Models.SurfaceModels
 {

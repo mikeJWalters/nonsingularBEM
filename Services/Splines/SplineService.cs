@@ -11,10 +11,10 @@ namespace Services.Splines
 {
     public class SplineService : ISplineService
     {
-        private ISplineCalculator _quinticNaturalCalculator;
-        private ISplineCalculator _quinticClampedCalculator;
-        private ISplineCalculator _quinticNaturalArclengthCalculator;
-        private ISplineCalculator _quinticClampedArclengthCalculator;
+        private readonly ISplineCalculator _quinticNaturalCalculator;
+        private readonly ISplineCalculator _quinticClampedCalculator;
+        private readonly ISplineCalculator _quinticNaturalArclengthCalculator;
+        private readonly ISplineCalculator _quinticClampedArclengthCalculator;
 
         public SplineService(ISplineCalculator quinticNaturalCalculator, ISplineCalculator quinticClampedCalculator, 
             ISplineCalculator quinticNaturalArclengthCalculator, ISplineCalculator quinticClampedArclengthCalculator)

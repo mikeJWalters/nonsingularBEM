@@ -19,7 +19,7 @@ namespace Services.Volume
                 volume += CalculateVolumeSegment(surface, i);
             }
 
-            return volume;
+            return Math.Abs(volume);
         }
 
         public double CalculateVolumeSegment(BubbleSurface surface, int i)

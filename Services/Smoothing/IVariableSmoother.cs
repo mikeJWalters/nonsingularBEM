@@ -4,6 +4,7 @@ namespace Services.Smoothing
 {
     public interface IVariableSmoother
     {
-        SurfaceVariable SmoothVariable(SurfaceVariable variable);
+        double[] SmoothEvenVariable(double[] values);
+        double[] SmoothOddVariable(double[] values);
     }
 }

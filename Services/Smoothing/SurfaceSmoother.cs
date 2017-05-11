@@ -8,21 +8,19 @@ namespace Services.Smoothing
 {
     public class SurfaceSmoother : ISurfaceSmoother
     {
-        private readonly IVariableSmoother _oddVariableSmoother;
-        private readonly IVariableSmoother _evenVariableSmoother;
+        private readonly IVariableSmoother _variableSmoother;
 
-        public SurfaceSmoother(IVariableSmoother oddVariableSmoother, IVariableSmoother evenVariableSmoother)
+        public SurfaceSmoother(IVariableSmoother variableSmoother)
         {
-            _oddVariableSmoother = oddVariableSmoother;
-            _evenVariableSmoother = evenVariableSmoother;
+            _variableSmoother = variableSmoother;
         }
 
         public BubbleSurface SmoothSurfaceVariables(BubbleSurface surface)
         {
-            surface.RadialNodePositions = _oddVariableSmoother.SmoothVariable(surface.RadialNodePositions);
-            surface.VerticalNodePositions = _evenVariableSmoother.SmoothVariable(surface.VerticalNodePositions);
-            surface.Potential = _evenVariableSmoother.SmoothVariable(surface.Potential);
-            surface.ExtraStress = _evenVariableSmoother.SmoothVariable(surface.ExtraStress);
+            surface.RadialNodePositions.Values = _variableSmoother.SmoothOddVariable(surface.RadialNodePositions.Values);
+            surface.VerticalNodePositions.Values = _variableSmoother.SmoothEvenVariable(surface.VerticalNodePositions.Values);
+            surface.Potential.Values = _variableSmoother.SmoothEvenVariable(surface.Potential.Values);
+            surface.ExtraStress.Values = _variableSmoother.SmoothEvenVariable(surface.ExtraStress.Values);
 
             return surface;
         }

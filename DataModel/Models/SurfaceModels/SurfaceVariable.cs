@@ -10,6 +10,7 @@ namespace DataModel.Models.SurfaceModels
         public double[] Values { get; set; }
         public double[] ArclengthDerivatives { get; set; }
         public double[] NormalDerivatives { get; set; }
+        public double[] SecondNormalDeriavtives { get; set; }
         public int NumberOfNodes => Values.Count();
         public int MatrixSize => NumberOfNodes - 1;
 
@@ -18,6 +19,7 @@ namespace DataModel.Models.SurfaceModels
             Values = new double[numberOfNodes];
             ArclengthDerivatives = new double[numberOfNodes];
             NormalDerivatives = new double[numberOfNodes];
+            SecondNormalDeriavtives = new double[numberOfNodes];
         }
     }
 }
