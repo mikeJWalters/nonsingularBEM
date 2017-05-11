@@ -125,6 +125,10 @@
     <Compile Include="Arclength\IArclengthCalculator.cs" />
     <Compile Include="Arclength\ISegmentIntegralService.cs" />
     <Compile Include="Arclength\SegmentIntegralService.cs" />
+    <Compile Include="Derivatives\CurvatureCalculator.cs" />
+    <Compile Include="Derivatives\DerivativeCalculator.cs" />
+    <Compile Include="Derivatives\ICurvatureCalculator.cs" />
+    <Compile Include="Derivatives\IDerivativeCalculator.cs" />
     <Compile Include="Matrices\IMatrixOperator.cs" />
     <Compile Include="Matrices\SolverSetup.cs" />
     <Compile Include="Matrices\MatrixOperator.cs" />

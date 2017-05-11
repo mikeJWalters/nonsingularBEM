@@ -109,6 +109,7 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Models\Derivatives\Derivatives.cs" />
     <Compile Include="Models\GaussValues\GaussValues.cs" />
     <Compile Include="Models\InitialConditions\BubbleInitialConditions.cs" />
     <Compile Include="Models\InitialConditions\FluidInitialConditions.cs" />

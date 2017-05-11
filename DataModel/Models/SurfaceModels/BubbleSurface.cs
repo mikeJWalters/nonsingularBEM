@@ -12,6 +12,7 @@ namespace DataModel.Models.SurfaceModels
         public SurfaceVariable ExtraStress { get; set; }
         public SplineValues RadialSplines { get; set; }
         public SplineValues VerticalSplines { get; set; }
+        public double[] Curvatuves { get; set; }
         
         public BubbleSurface(int numberOfNodes)
         {
@@ -22,6 +23,7 @@ namespace DataModel.Models.SurfaceModels
             Potential = new SurfaceVariable(numberOfNodes);
             RadialSplines = new SplineValues(numberOfNodes);
             VerticalSplines = new SplineValues(numberOfNodes);
+            Curvatuves = new double[numberOfNodes];
         }
     }
 }
