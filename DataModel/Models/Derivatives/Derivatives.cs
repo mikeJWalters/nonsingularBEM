@@ -12,6 +12,11 @@ namespace DataModel.Models.Derivatives
         public double[] VerticalDerivative { get; set; }
         public double[] VerticalSecondDerivative { get; set; }
 
+        public double Jacobian(int i)
+        {
+            return Math.Pow(RadialDerivative[i], 2) + Math.Pow(VerticalDerivative[i], 2);
+        }
+
         public Derivatives(int numberOfNodes)
         {
             RadialDerivative = new double[numberOfNodes];

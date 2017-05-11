@@ -26,10 +26,5 @@ namespace Services.Derivatives
 
             return surface;
         }
-
-        protected double Jacobian(DataModel.Models.Derivatives.Derivatives derivatives, int i)
-        {
-            return Math.Pow(derivatives.RadialDerivative[i], 2) + Math.Pow(derivatives.VerticalDerivative[i], 2);
-        }
     }
 }

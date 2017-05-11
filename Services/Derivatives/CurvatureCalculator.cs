@@ -2,7 +2,7 @@
 
 namespace Services.Derivatives
 {
-    public class CurvatureCalculator : DerivativeCalculator, ICurvatureCalculator
+    public class CurvatureCalculator : ICurvatureCalculator
     {
         public double[] CalculateCurvatures(DataModel.Models.Derivatives.Derivatives derivatives)
         {
@@ -17,7 +17,7 @@ namespace Services.Derivatives
 
         private double CalculateCurvature(DataModel.Models.Derivatives.Derivatives derivatives, int i)
         {
-            var jacobian = Jacobian(derivatives, i);
+            var jacobian = derivatives.Jacobian(i);
             var numerator = (derivatives.RadialDerivative[i]*derivatives.VerticalSecondDerivative[i] -
                              derivatives.RadialSecondDerivative[i]*derivatives.VerticalDerivative[i]);
 
